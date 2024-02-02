@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>Temperature Converter</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="index.js"></script>
+<body>
+
+<div class="container p-5">
+<h2>Fahrenheit to Celcius Temperature Converter</h2>
+<h4>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+
+<p>
+  <label>Fahrenheit : </label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" 
+  oninput="temperatureConverter(this.value)" 
+  onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+</h4>
+</div>
+<div class="container p-5 mt-3">
+<h2>Celsius to Fahrenheit Temperature Converter</h2>
+<h4>
+<p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+<p>
+  <label>Celsius : </label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" 
+  oninput="temperatureConverter1(this.value)" 
+  onchange="temperatureConverter1(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+</h4>
+</div>
+
+</body>
+</html>
